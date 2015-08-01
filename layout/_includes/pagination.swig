@@ -1,0 +1,11 @@
+<nav class="pagenav clearfix">
+	{% if (page.prev) %}
+		<a href="{{ config.root }}{{ page.prev_link }}" title="{{ __('prev') }}" class="prevpage">
+      {{ __('prev') }}
+    </a>
+	{% elif page.next %}
+    <a href="{{ config.root }}{{ page.next_link }}" title="{{ __('next') }}" class="nextpage">
+      {{ __('next') }}
+    </a>
+  {% endif %}
+</nav>

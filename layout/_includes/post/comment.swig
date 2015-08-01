@@ -1,0 +1,7 @@
+{% if (theme.duoshuo.enable && page.comments) %}
+
+<section class="comment">
+  <div class="ds-thread"></div>
+</section>
+
+{% endif %}
